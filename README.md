@@ -56,18 +56,19 @@ Stream Mate is a Flutter application for video sharing, designed to simplify the
 
 ## Screenshots
 
-![Screenshot_1715100149 Medium](https://github.com/nith-in7/stream_mate/assets/124262214/693b1a84-f192-4190-91f6-fee3980da9ec)
-![Screenshot_1715100126 Medium](https://github.com/nith-in7/stream_mate/assets/124262214/1a0fb6a9-af96-48ec-9994-ab3229514d6b)
-![Screenshot_1715099882 Medium](https://github.com/nith-in7/stream_mate/assets/124262214/a74e3cab-30c1-4938-8884-631e4be08298)
-![Screenshot_1715099950 Medium](https://github.com/nith-in7/stream_mate/assets/124262214/07b54c6b-de32-483d-881e-a3a6e64df8e0)
-![Screenshot_1715099836 Medium](https://github.com/nith-in7/stream_mate/assets/124262214/e97153f6-cb2b-4c5e-a00f-73b6e0e4c297)
-![Screenshot_1715099933 Medium](https://github.com/nith-in7/stream_mate/assets/124262214/9160c872-3065-49f9-8f5a-657905c3f80c)
-![Screenshot_1715099846 Medium](https://github.com/nith-in7/stream_mate/assets/124262214/c2895956-b7a4-4a75-98fd-25392f3dd4db)
-![Screenshot_1715099907 Medium](https://github.com/nith-in7/stream_mate/assets/124262214/3a431f12-4193-4fc9-8179-b91c0dc6d5e8)
-![Screenshot_1715099892 Medium](https://github.com/nith-in7/stream_mate/assets/124262214/1ebfd2bd-d6c6-4487-afbd-f7a51277fe38)
-![Screenshot_1715099735 Medium](https://github.com/nith-in7/stream_mate/assets/124262214/8d935606-22f3-422f-bc69-801e64e25ff5)
+![Screenshot_1715100740 Medium](https://github.com/nith-in7/stream_mate/assets/124262214/3d1d6e8d-1e29-46fd-a119-d3581cfcba79)
 ![Screenshot_1715099712 Medium](https://github.com/nith-in7/stream_mate/assets/124262214/d6f405a8-834c-4387-b107-f5d754319c7b)
-
+![Screenshot_1715099735 Medium](https://github.com/nith-in7/stream_mate/assets/124262214/8d935606-22f3-422f-bc69-801e64e25ff5)
+![Screenshot_1715100126 Medium](https://github.com/nith-in7/stream_mate/assets/124262214/1a0fb6a9-af96-48ec-9994-ab3229514d6b)
+![Screenshot_1715100149 Medium](https://github.com/nith-in7/stream_mate/assets/124262214/693b1a84-f192-4190-91f6-fee3980da9ec)
+![Screenshot_1715099846 Medium](https://github.com/nith-in7/stream_mate/assets/124262214/c2895956-b7a4-4a75-98fd-25392f3dd4db)
+![Screenshot_1715099836 Medium](https://github.com/nith-in7/stream_mate/assets/124262214/e97153f6-cb2b-4c5e-a00f-73b6e0e4c297)
+![Screenshot_1715099907 Medium](https://github.com/nith-in7/stream_mate/assets/124262214/3a431f12-4193-4fc9-8179-b91c0dc6d5e8)
+![Screenshot_1715099882 Medium](https://github.com/nith-in7/stream_mate/assets/124262214/a74e3cab-30c1-4938-8884-631e4be08298)
+![Screenshot_1715099892 Medium](https://github.com/nith-in7/stream_mate/assets/124262214/1ebfd2bd-d6c6-4487-afbd-f7a51277fe38)
+![Screenshot_1715100723 Medium](https://github.com/nith-in7/stream_mate/assets/124262214/30643feb-0c64-48bd-88b9-0bde4fc85380)
+![Screenshot_1715099933 Medium](https://github.com/nith-in7/stream_mate/assets/124262214/9160c872-3065-49f9-8f5a-657905c3f80c)
+![Screenshot_1715099950 Medium](https://github.com/nith-in7/stream_mate/assets/124262214/07b54c6b-de32-483d-881e-a3a6e64df8e0)
 
 
 ## Getting Started
