@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "202035267098",
+    "project_id": "stream-mate",
+    "storage_bucket": "stream-mate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202035267098:android:eeb5776aa8f07feff373a3",
+        "android_client_info": {
+          "package_name": "com.example.stream_mate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXyStXJPP9YXUm18iR7BcIi4z0mFXTCPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
