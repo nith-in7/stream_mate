@@ -12,7 +12,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   Widget build(BuildContext context) {
     return CustomScrollView(
       slivers: [
-        SliverList(delegate: SliverChildListDelegate([ProfileWidget()]))
+        SliverList(delegate: SliverChildListDelegate([const ProfileWidget()]))
       ],
     );
   }

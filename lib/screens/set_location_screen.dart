@@ -131,5 +131,7 @@ getLocation() async {
         await placemarkFromCoordinates(position.latitude, position.longitude);
 
     "${result[0].name}, ${result[0].locality}, ${result[0].administrativeArea}";
-  } catch (e) {}
+  } on LocationServiceDisabledException catch (e) {
+    Fluttertoast.showToast(msg: e.toString());
+  }
 }

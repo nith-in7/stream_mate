@@ -1,3 +1,4 @@
+import 'package:stream_mate/model/search_suggestion_model.dart';
 import 'package:stream_mate/widgets/librabry_window.dart';
 import 'package:stream_mate/widgets/profile_image_widget.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -78,9 +79,9 @@ class _SearchBarWidgetState extends State<SearchBarWidget> {
         suggestionsBuilder:
             (BuildContext context, SearchController controller) async {
           final QuerySnapshot<Map<String, dynamic>> data = await usernameList;
-          print("helooooo ${data.docs.length}");
-          final List<UserDetailes> userList = data.docs
-              .map((e) => UserDetailes(
+
+          final List<SearchSuggestion> userList = data.docs
+              .map((e) => SearchSuggestion(
                   displayName: e.data()["displayName"] ?? "",
                   imageUrl: e.data()["imageUrl"],
                   uid: e.data()["uid"],
@@ -88,8 +89,15 @@ class _SearchBarWidgetState extends State<SearchBarWidget> {
               .toList();
 
           return userList
-              .where((element) => element.username
-                  .contains(controller.text == "" ? " " : controller.text))
+              .where((element) =>
+                  element.username.toLowerCase().contains(
+                      controller.text.trim() == ""
+                          ? " "
+                          : controller.text.trim().toLowerCase()) ||
+                  element.displayName.toLowerCase().contains(
+                      controller.text.trim() == ""
+                          ? " "
+                          : controller.text.trim().toLowerCase()))
               .map((e) => ListTile(
                     onTap: () {
                       onTap(e.uid);
@@ -100,60 +108,4 @@ class _SearchBarWidgetState extends State<SearchBarWidget> {
                   ));
         });
   }
-}
-
-// class UsernameSuggestion extends StatefulWidget {
-//   const UsernameSuggestion(
-//       {super.key, required this.searchController, required this.query});
-//   final String query;
-//   final SearchController searchController;
-//   @override
-//   State<UsernameSuggestion> createState() => _UsernameSuggestionState();
-// }
-
-// class _UsernameSuggestionState extends State<UsernameSuggestion> {
-//   late Stream<QuerySnapshot<Map<String, dynamic>>> usernameStream;
-//   @override
-//   void initState() {
-//     usernameStream = FirebaseFirestore.instance
-//         .collection("username_list")
-//         .where('username', isGreaterThanOrEqualTo: widget.query)
-//         .where('username', isLessThan: '${widget.query}z')
-//         .snapshots();
-//     super.initState();
-//   }
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return StreamBuilder(
-//       stream: usernameStream,
-//       builder: (context, snapshot) {
-//         if (snapshot.hasData) {
-//           print("hellloo oooo ${snapshot.data!.docs.length}");
-//           final e = snapshot.data!.docs[0];
-//           return ListTile(
-//             leading: ProfileImage(radius: 20, imageUrl: e.data()['imageUrl']),
-//             subtitle: Text(e.data()['uid']),
-//             title: Text(e.data()["username"]),
-//           );
-//         }
-
-//         return const [ListTile(
-//           title: Text("data"),
-//         );]
-//       },
-//     );
-//   }
-// }
-
-class UserDetailes {
-  UserDetailes(
-      {required this.displayName,
-      required this.imageUrl,
-      required this.uid,
-      required this.username});
-  final String username;
-  final String displayName;
-  final String uid;
-  final String imageUrl;
 }

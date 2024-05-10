@@ -75,12 +75,12 @@ class _UserDetailsState extends ConsumerState<UserDetails>
     final imageUrl = await storageRef.getDownloadURL();
     user.updatePhotoURL(imageUrl);
     await firestore.collection(user.uid).doc('user_details').set({
-      "username": usernameController.text,
+      "username": usernameController.text.trim().toLowerCase(),
       "displayName": nameController.text,
       "imageUrl": imageUrl
     });
     await firestore.collection("username_list").add({
-      "username": usernameController.text,
+      "username": usernameController.text.trim().toLowerCase(),
       "uid": user.uid,
       "displayName": nameController.text,
       "imageUrl": imageUrl
@@ -238,7 +238,7 @@ class _UserDetailsState extends ConsumerState<UserDetails>
                         await firestore
                             .collection("username_list")
                             .where('username',
-                                isEqualTo: usernameController.text)
+                                isEqualTo: usernameController.text.trim().toLowerCase())
                             .get();
                     setState(() {
                       usernameUsed = data.size > 0;
